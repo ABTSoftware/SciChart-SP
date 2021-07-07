@@ -3,22 +3,25 @@
 import PackageDescription
 
 let repo = "PodSpecs"
-let version = "4.3.0.5697"
+let version = "4.3.0.5699"
 
 let package = Package(
     name: "SciChart",
     platforms: [
-        .macOS(.v10_12), .iOS(.v8)
+        .macOS(.v10_12), 
+        .iOS(.v9)
     ],
     products: [
         .library(
             name: "SciChart",
-            targets: ["SciChart"]),
+            targets: ["SciChart"]    
+        ),
     ],
     targets: [
         .binaryTarget(
             name: "SciChart",
             url: "https://github.com/ABTSoftware/\(repo)/releases/download/v\(version)/SciChart_iOS_\(version).zip",
-            checksum: "234623cc860481697759680b6624e677ac4260136b5b753ba3fa7e91325c9ca1"),
+            checksum: "c81ebda155aac93c291cfa4ec2ea9c421358ab21806a0a74d2914bf3aebd5443"
+        ),
     ]
 )
