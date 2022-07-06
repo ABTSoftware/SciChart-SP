@@ -2,8 +2,8 @@
 
 import PackageDescription
 
-let repo = "PodSpecs-Nightly"
-let version = "4.4.0-nightly.5838"
+let repo = "PodSpecs"
+let version = "4.4.0.5839"
 
 let package = Package(
     name: "SciChart",
@@ -21,7 +21,7 @@ let package = Package(
         .binaryTarget(
             name: "SciChart",
             url: "https://github.com/ABTSoftware/\(repo)/releases/download/v\(version)/SciChart_iOS_\(version).zip",
-            checksum: "409fdcbafa265a19013c84084926b322e1a5d172e867e69ff26857375f1aac45"
+            checksum: "ed7a831224f1e38fb6d0d750ac0b238d9dfbe7e9aed14af0d35f85f4f7fcf806"
         ),
     ]
 )
